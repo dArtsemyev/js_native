@@ -58,11 +58,11 @@ console.log(deepCopyUser === user)
 console.log(deepCopyUser.friends === user.friends)
 
 //3. Поверхностная копия массива students
-let copyStudents;
+let copyStudents = [...students]
 
 //Проверка:
-// console.log(???)
-// console.log(???)
+console.log(copyStudents === students)
+console.log(copyStudents[0] === students[0])
 
 //4. Полная (глубокая) копия массива students
 let deepCopyStudents;
