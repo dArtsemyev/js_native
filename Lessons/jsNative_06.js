@@ -121,7 +121,7 @@ let ann = newDeepCopyStudents.find(student => student.name === "Ann")
 console.log(ann)
 
 //12. Найдите студента с самым высоким баллом (reduce)
-let bestStudent;
+let bestStudent = newDeepCopyStudents.reduce((stMax, st) => stMax > st ? st : stMax )
 console.log(bestStudent)
 
 //13. Найдите сумму баллов всех студентов (reduce)
