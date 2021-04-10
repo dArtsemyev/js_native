@@ -125,7 +125,7 @@ let bestStudent = newDeepCopyStudents.reduce((stMax, st) => stMax > st ? st : st
 console.log(bestStudent)
 
 //13. Найдите сумму баллов всех студентов (reduce)
-let scoresSum;
+let scoresSum = newDeepCopyStudents.reduce((acc, st) => acc += st.scores, 0)
 console.log(scoresSum)
 
 // 14.Напишите функцию addFriends, которая принимает параметром массив students
