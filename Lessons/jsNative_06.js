@@ -97,7 +97,7 @@ let notMarriedStudents =newDeepCopyStudents.filter(student => !student.isMarried
 console.log(notMarriedStudents)
 
 //8. Сформируйте массив имён студентов (map)
-let studentsNames;
+let studentsNames = students.map(student => student.name)
 console.log(studentsNames)
 
 //8a. Сформируйте строку из имён студентов, разделённых
