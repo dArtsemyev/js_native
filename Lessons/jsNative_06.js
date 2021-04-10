@@ -83,7 +83,7 @@ let  bestStudents = deepCopyStudents.filter(student => student.scores >= 100)
 console.log(bestStudents)
 
 //6a."Вырежьте" трёх лучших студентов из массива deepCopyStudents (splice)
-let topStudents;
+let topStudents = deepCopyStudents.splice(0,3)
 console.log(topStudents)
 console.log(deepCopyStudents)
 
