@@ -117,7 +117,7 @@ let studentsWithMarriedNick = newDeepCopyStudents.map(student => student.name ==
 console.log(studentsWithMarriedNick)
 
 //11. Найдите студента по имени Ann (find)
-let ann;
+let ann = newDeepCopyStudents.find(student => student.name === "Ann")
 console.log(ann)
 
 //12. Найдите студента с самым высоким баллом (reduce)
