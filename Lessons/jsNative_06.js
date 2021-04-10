@@ -65,11 +65,11 @@ console.log(copyStudents === students)
 console.log(copyStudents[0] === students[0])
 
 //4. Полная (глубокая) копия массива students
-let deepCopyStudents;
+let deepCopyStudents = students.map(student => ({...student}))
 
 //Проверка:
-// console.log(???)
-// console.log(???)
+console.log(deepCopyStudents === students)
+console.log(deepCopyStudents[0] === students[0])
 
 // NB!!! Далее все преобразования выполняем не модифицируя исходный массив students
 // Вывод результатов - в консоль
