@@ -79,7 +79,7 @@ console.log(deepCopyStudents.sort((st1, st2) => st1.name > st2.name ? 1 : -1))
 //5a. Отсортируйте deepCopyStudents по успеваемости(лучший идёт первым)(sort)
 console.log(deepCopyStudents.sort((st1, st2) => st2.scores - st1.scores))
 //6. Сформируйте массив студентов, у которых 100 и более баллов (filter)
-let  bestStudents;
+let  bestStudents = deepCopyStudents.filter(student => student.scores >= 100)
 console.log(bestStudents)
 
 //6a."Вырежьте" трёх лучших студентов из массива deepCopyStudents (splice)
