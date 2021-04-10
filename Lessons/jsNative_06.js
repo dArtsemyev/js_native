@@ -113,7 +113,7 @@ let trueStudents = newDeepCopyStudents.map(student => ({...student, isStudent: t
 console.log(trueStudents)
 
 //10. Nick женился. Выполните выполните соответствующие преобразование массива students (map)
-let studentsWithMarriedNick;
+let studentsWithMarriedNick = newDeepCopyStudents.map(student => student.name === "Nick" ? {...student, isMarried: true} : {...student})
 console.log(studentsWithMarriedNick)
 
 //11. Найдите студента по имени Ann (find)
