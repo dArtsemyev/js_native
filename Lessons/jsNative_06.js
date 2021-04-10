@@ -89,7 +89,7 @@ console.log(deepCopyStudents)
 
 //6b. Объедините массивы deepCopyStudents и topStudents так,
 // чтоб сохранился порядок сортировки (spread-опреатор)
-let newDeepCopyStudents;
+let newDeepCopyStudents = [...topStudents, ...deepCopyStudents]
 console.log(newDeepCopyStudents)
 
 //7. Сформируйте массив холостых студентов (filter)
