@@ -109,7 +109,7 @@ let namesWithComma = studentsNames.join()
 console.log(namesWithComma)
 
 //9. Добавьте всем студентам свойство "isStudent" со значением true (map)
-let trueStudents;
+let trueStudents = newDeepCopyStudents.map(student => ({...student, isStudent: true}))
 console.log(trueStudents)
 
 //10. Nick женился. Выполните выполните соответствующие преобразование массива students (map)
