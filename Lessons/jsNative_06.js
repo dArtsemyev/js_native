@@ -103,9 +103,9 @@ console.log(studentsNames)
 //8a. Сформируйте строку из имён студентов, разделённых
 // - запятой (join)
 // - пробелом (join)
-let nameWithSpace;
+let nameWithSpace = studentsNames.join(" ")
 console.log(nameWithSpace)
-let namesWithComma;
+let namesWithComma = studentsNames.join()
 console.log(namesWithComma)
 
 //9. Добавьте всем студентам свойство "isStudent" со значением true (map)
