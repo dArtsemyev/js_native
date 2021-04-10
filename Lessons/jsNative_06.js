@@ -93,7 +93,7 @@ let newDeepCopyStudents = [...topStudents, ...deepCopyStudents]
 console.log(newDeepCopyStudents)
 
 //7. Сформируйте массив холостых студентов (filter)
-let notMarriedStudents;
+let notMarriedStudents =newDeepCopyStudents.filter(student => !student.isMarried)
 console.log(notMarriedStudents)
 
 //8. Сформируйте массив имён студентов (map)
