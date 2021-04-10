@@ -132,3 +132,11 @@ console.log(scoresSum)
 // и добавляет в каждому студенту свойство friends,
 // значением которого является массив имён всех остальных студентов из массива,
 // за исключением собственного имени студента. Т.е. в друзьях у Боба Боба быть не должно.
+function addFriends(students) {
+    return students.map(student => {
+        const studentsNames = students.map(student => student.name)
+        const friendsNames = studentsNames.filter(studentName => studentName !== student.name)
+        return {...student, friends: friendsNames}
+    })
+}
+console.log(addFriends(students))
